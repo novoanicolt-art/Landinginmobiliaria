@@ -129,33 +129,6 @@
     }
   </style>
 
- <script>
-  let currentLang = 'es';
-
-  function setLang(lang) {
-    currentLang = lang;
-
-    document.querySelectorAll('[data-lang]').forEach(el => {
-      el.style.display = el.dataset.lang === lang ? 'block' : 'none';
-    });
-
-    updateWhatsAppLink();
-  }
-
-  function updateWhatsAppLink() {
-    const phone = "15618205216";
-
-    const messageES = "Hola, quiero más información sobre sus servicios inmobiliarios en Florida.";
-    const messageEN = "Hello, I would like more information about your real estate services in Florida.";
-
-    const message = currentLang === 'es' ? messageES : messageEN;
-    const encodedMessage = encodeURIComponent(message);
-
-    document.getElementById("whatsappBtn").href =
-      `https://wa.me/${phone}?text=${encodedMessage}`;
-  }
-</script>
-
   <!-- HERO -->
   <div class="hero">
     <div>
