@@ -171,12 +171,29 @@
       </div>
     </div>
 <a
-  href="https://wa.me/525512345678?text=Hello,%20I%20would%20like%20more%20information%20about%20your%20services."
+  id="whatsappBtn"
+  href="#"
   target="_blank"
   class="btn-whatsapp"
-    <!-- TU FOTO -->
-    <img src="perfil.png" alt="Real Estate Advisor Florida">
-  </div>
+>
+  💬 WhatsApp
+</a>
+
+<script>
+  const phone = "525512345678";
+
+  const messageES = "Hola, quiero más información sobre sus servicios.";
+  const messageEN = "Hello, I would like more information about your services.";
+
+  const userLang = navigator.language || navigator.userLanguage;
+  const message = userLang.startsWith("es") ? messageES : messageEN;
+
+  const encodedMessage = encodeURIComponent(message);
+
+  document.getElementById("whatsappBtn").href =
+    `https://wa.me/${phone}?text=${encodedMessage}`;
+</script>
+
 
   <!-- SERVICIOS -->
   <div class="services">
