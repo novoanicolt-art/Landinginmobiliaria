@@ -171,21 +171,6 @@
       </div>
     </div>
 
-<script>
-  const phone = "15618205216";
-
-  const messageES = "Hola, quiero más información sobre sus servicios.";
-  const messageEN = "Hello, I would like more information about your services.";
-
-  const userLang = navigator.language || navigator.userLanguage;
-  const message = userLang.startsWith("es") ? messageES : messageEN;
-
-  const encodedMessage = encodeURIComponent(message);
-
-  document.getElementById("whatsappBtn").href =
-    `https://wa.me/${phone}?text=${encodedMessage}`;
-</script>
-
 
   <!-- SERVICIOS -->
   <div class="services">
