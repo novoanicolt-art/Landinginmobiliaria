@@ -284,27 +284,49 @@ alt="Real Estate Advisor Florida">
 FORM -->
 <div
 class="form">
-<h2>Contact</h2>
-<form
-action="https://formsubmit.co/novoanicolt@gmail.com"
-method="POST">
-<input
-type="text" name="name" placeholder="Full Name"
-required>
-<input
-type="email" name="email" placeholder="Email"
-required>
-<textarea name="message" placeholder="Tell us
-about your real estate goals"></textarea>
-<button
-class="submit">Send</button>
-</form>
+<!-- ESPAÑOL -->
+  <div data-lang="es">
+    <h2>Consulta Privada</h2>
+    <p>
+      Complete el formulario y uno de nuestros asesores se pondrá en contacto
+      con usted para una conversación confidencial y personalizada.
+    </p>
+  </div>
+<!-- ENGLISH -->
+  <div data-lang="en">
+    <h2>Private Consultation</h2>
+    <p>
+      Please complete the form below and one of our advisors will contact you
+      for a confidential and personalized consultation.
+    </p>
+  </div>
+
+  <form action="https://formsubmit.co/tuemail@email.com" method="POST">
+
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="text" name="name" placeholder="Nombre completo / Full Name" required>
+
+    <input type="email" name="email" placeholder="Correo electrónico / Email" required>
+
+    <input type="text" name="country" placeholder="País de residencia / Country">
+
+    <textarea name="message" rows="4"
+      placeholder="Cuéntenos brevemente sus objetivos inmobiliarios / Please describe your real estate goals">
+    </textarea>
+
+    <button class="submit">Enviar consulta / Submit inquiry</button>
+
+  </form>
 </div>
-<div
-class="footer">
-© 2026 · Florida
-Real Estate Advisory
-</div>
+
+   
+
+  <div class="footer">
+    © 2026 · Florida Real Estate Advisory
+  </div>
+
 </div>
 </body>
 </html>
+
