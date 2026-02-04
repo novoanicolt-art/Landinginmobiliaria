@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gracias</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .box {
+      background: #020617;
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 420px;
+    }
+    a {
+      color: #25D366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === lang ? '' : 'none';
+      });
+    }
+  </script>
+</head>
+
+<body onload="setLang('es')">
+
+  <div class="box">
+    <h1 data-lang="es">¡Gracias!</h1>
+    <h1 data-lang="en">Thank you!</h1>
+
+    <p data-lang="es">
+      Hemos recibido tu mensaje.<br>
+      Te contactaré lo antes posible.
+    </p>
+
+    <p data-lang="en">
+      We have received your message.<br>
+      I will contact you as soon as possible.
+    </p>
+
+    <br>
+
+    <a data-lang="es" href="index.html">Volver a la página</a>
+    <a data-lang="en" href="index.html">Back to the website</a>
+  </div>
+
+</body>
+</html>
